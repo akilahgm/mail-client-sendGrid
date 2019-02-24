@@ -1,0 +1,197 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 0px;
+    padding-right: 0px;
+    border-radius: 15px 0 0 15px;
+    width: 36%;
+    transition: 0.5s;
+}
+input[type=text]:focus{
+    
+    outline-style: none;
+    background-color: #eff3f9;
+    color: #000000; 
+}
+button {
+    background-color: #3347fb;
+    color: white;
+    padding: 14px 20px;
+    margin: 7px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+button:hover,
+button:focus  {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+
+
+.container {
+    padding-bottom: 15px;
+    margin-left: 0px;
+}
+h5{
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: right;
+    margin-right: 51%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #dfe2ff;
+    margin: 1% auto 1% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 70%; 
+    border-radius: 10px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 2%;
+    top: 0;
+    color: #000;
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Add Zoom Animation */
+.animate {
+
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+    animation-duration: 1.1s;
+}
+
+@-webkit-keyframes animatezoom {
+    0% {-webkit-transform: scale(0)} 
+    85% {transform: scale(1.05)}
+    100% {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    0% {transform: scale(0)} 
+    85% {transform: scale(1.05)}
+    100% {transform: scale(1)}
+}
+
+
+
+.btn-primary{
+    border-radius: 0 15px 15px 0;
+    background-color: #010a54;
+}
+.btn-primary:hover{
+    border-radius: 0 15px 15px 0;
+    background-color: #010a54;
+}
+.modal{
+    transition: 3s;
+}
+h1{
+    font-size: 150%;
+}
+img{
+    height: 50px;
+    width: auto;
+    position: sticky;
+}
+
+@media screen and (min-width: 750px) {
+    .modal-content{
+        width: 600px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    button{
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+   
+    h1{
+        font-size: 140%;
+    }
+    input[type=text]{
+        width: 60%;
+        padding: 6px 20px;
+    }
+    button{
+        width:35%;
+        padding: 9px 20px;
+        font-size: 80%;
+        margin-left: 0px;
+        padding-left: 2%;
+    }
+    h5{
+        margin-right: 0px;
+        font-size: 75%;
+    }
+    h4{
+        font-size: 80%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 995px) {
+input[type=text]{
+        width: 50%;
+        padding: 12px 20px;
+    }
+    button{
+        width:20%;
+        padding: 11px 20px;
+        font-size: 120%;
+        padding-left: 2%;
+
+    }
+    h5{
+        margin-right: 30%;
+        
+    }
+}
+
+
+.sendBox{
+    margin-top: 60px;
+}
+label{
+    margin-left: 10px;
+    margin-right: 10px;
+}
